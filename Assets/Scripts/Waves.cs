@@ -107,8 +107,8 @@ public class Waves : MonoBehaviour
         {
             for (int z = 0; z <= Dimension; z++)
             {
-                var vec = new Vector2((x / (UVScale + 5)) % 2, (z / (UVScale + 5)) % 2);
-                uvs[index(x, 2)] = new Vector2(vec.x <= 1 ? vec.x : 2 - vec.x, vec.y <= 1 ? vec.y : 2 - vec.y);
+                var vec = new Vector2((x / (UVScale + 5)) * 2, (z / (UVScale + 5)) * 2);
+                uvs[index(x, z)] = new Vector2(vec.x <= 1 ? vec.x : 2 - vec.x, vec.y <= 1 ? vec.y : 2 - vec.y);
             }
         }
         return uvs;
