@@ -92,11 +92,11 @@ Material:
     - Vector1_446369906eb84b728afbe8207c051937: -1
     - Vector1_45e22f966773486a92c0100c778bf610: 1
     - Vector1_771e5d9677004e54b21a912040e53f78: 7
-    - Vector1_79dd049b191146b9b8e66dc0812b5372: 100
+    - Vector1_79dd049b191146b9b8e66dc0812b5372: 50
     - Vector1_c751fe537c4749dabb8dd60be981f39f: 10
     - Vector1_c9135f85fdcc4ba095cee5249cc57f79: 1
     - Vector1_ce0a199ca3154d49bcc01a0791e2a129: 1
-    - Vector1_eba271463ce54d749d898eb178835e90: 1
+    - Vector1_eba271463ce54d749d898eb178835e90: 2
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
