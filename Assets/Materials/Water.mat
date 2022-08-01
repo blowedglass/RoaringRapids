@@ -84,17 +84,18 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_0e8b66be43c746f2814f2c2a61578587: 50
-    - Vector1_1c349ea3fbc942be8ada2c0343f9b805: 0.05
+    - Vector1_0e8b66be43c746f2814f2c2a61578587: 0.1
+    - Vector1_1c349ea3fbc942be8ada2c0343f9b805: 1
     - Vector1_24375445669c45bd925aa736f5fbd840: 3
-    - Vector1_3e199c4e1c074b86a39ff68a04a56764: 0.3
+    - Vector1_3e199c4e1c074b86a39ff68a04a56764: 1
     - Vector1_43a9aa3f5de04b4b8332ed351b970598: 1
-    - Vector1_446369906eb84b728afbe8207c051937: -1
+    - Vector1_446369906eb84b728afbe8207c051937: -0.3
     - Vector1_45e22f966773486a92c0100c778bf610: 1
     - Vector1_771e5d9677004e54b21a912040e53f78: 7
     - Vector1_79dd049b191146b9b8e66dc0812b5372: 50
+    - Vector1_98799569ac2b4d8aa72d4c4a18aebc4d: 0
     - Vector1_c751fe537c4749dabb8dd60be981f39f: 10
-    - Vector1_c9135f85fdcc4ba095cee5249cc57f79: 1
+    - Vector1_c9135f85fdcc4ba095cee5249cc57f79: 5
     - Vector1_ce0a199ca3154d49bcc01a0791e2a129: 1
     - Vector1_eba271463ce54d749d898eb178835e90: 2
     - _AlphaClip: 0
