@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Mesh Mat
-  m_Shader: {fileID: 4800000, guid: f108a2da52054fb49b7f5c695373dc1e, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 4989ebe942fd31f4f8624813188fbdeb, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -93,6 +93,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_9edf9000680243d1b92ff1fda80827fe: -0.5
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
