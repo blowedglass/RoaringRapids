@@ -40,7 +40,7 @@ public class LevelManager : MonoBehaviour
     void AddGround()
     {
         allGroundObjects[groundIndex].transform.position = instantiatePos;
-        instantiatePos += new Vector3(0f, 0f, 10f);
+        instantiatePos += new Vector3(0f, 0f, 8f);
         groundIndex++;
         if (groundIndex >= 5)
             groundIndex = 0;
