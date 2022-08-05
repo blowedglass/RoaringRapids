@@ -17,6 +17,11 @@ public class LevelManager : MonoBehaviour
     //player for Test
     public Transform player;
 
+    public Rigidbody rigid;
+    public float speed = 5f;
+    public float moveSpped = 10f;
+    public float turnSpeed = 50f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +35,7 @@ public class LevelManager : MonoBehaviour
 
     private void Update()
     {
-        player.Translate(Vector3.forward * Time.deltaTime * 1f);
+        //player.Translate(Vector3.forward * Time.deltaTime * 1f);
 
         if (player.transform.position.z > instantiatePos.z - 35)
             AddGround();

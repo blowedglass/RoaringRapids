@@ -4,64 +4,39 @@ using UnityEngine;
 
 public class Movement1 : MonoBehaviour
 {
-    private Transform Player;
-    public SwipeControls Controls;
+    //player for Test
+    public Transform player;
 
-    private bool Lane1 = false;
-    private bool Lane2 = true;
-    private bool Lane3 = false;
+    public Rigidbody rigid;
+    public float speed = 5f;
+    public float moveSpped = 10f;
+    public float turnSpeed = 50f;
 
     private void Start()
     {
-        Player = GetComponent<Transform>();
+        
     }
 
     private void Update()
     {
-        if (Lane3 == true && Player.position.z < 1.1f)
-        {
-            Player.position += new Vector3(0, 0, 10.5f * Time.deltaTime);
-        }
-        else if (Lane1 == true && Player.position.z > -1.1f)
-        {
-            Player.position += new Vector3(0, 0, -10.5f * Time.deltaTime);
-        }
-        else if (Lane2 == true && Player.position.z <= -0.1f)
-        {
-            Player.position += new Vector3(0, 0, 10.5f * Time.deltaTime);
-        }
-        else if (Lane2 == true && Player.position.z >= 0.1f)
-        {
-            Player.position += new Vector3(0, 0, -10.5f * Time.deltaTime);
+        if (Input.GetKey(KeyCode.W))
+        { 
+            rigid.AddForce(transform.forward * speed); 
         }
 
+        if (Input.GetKey(KeyCode.S))
+        {
+            rigid.AddForce(transform.forward * -1 * speed);
+        }
 
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
+        }
 
-        #region ChangeBools
-        if (Controls.swiperight == true && Lane3 == false && Lane1 == true)
+        if (Input.GetKey(KeyCode.D))
         {
-            Lane2 = true;
-            Lane1 = false;
-            Lane3 = false;
+            transform.Rotate(Vector3.down, turnSpeed * Time.deltaTime);
         }
-        else if (Controls.swipeleft == true && Lane2 == true && Player.position.z <= 0.2f)
-        {
-            Lane1 = true;
-            Lane2 = false;
-            Lane3 = false;
-        }
-        else if (Controls.swiperight == true && Lane2 == true && Player.position.z >= -0.2f)
-        {
-            Lane3 = true;
-            Lane1 = false;
-            Lane2 = false;
-        }
-        else if (Controls.swipeleft == true && Lane1 == false && Lane3 == true)
-        {
-            Lane2 = true;
-            Lane1 = false;
-            Lane3 = false;
-        }
-        #endregion
     }
 }
