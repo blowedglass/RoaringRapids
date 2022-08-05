@@ -17,10 +17,9 @@ public class LevelManager : MonoBehaviour
     //player for Test
     public Transform player;
 
-    public Rigidbody rigid;
-    public float speed = 5f;
-    public float moveSpped = 10f;
-    public float turnSpeed = 50f;
+    //public Scale localScale;
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -55,7 +54,8 @@ public class LevelManager : MonoBehaviour
     {
         GameObject obj = Instantiate(groundPrefab, instantiatePos, Quaternion.identity);
         allGroundObjects[groundIndex] = obj;
-        instantiatePos += new Vector3(0f, 0f, 10f);
+        instantiatePos += new Vector3(0f, 0f, 15f);
+        //instantiatePos.transform.localScale = Vector3(2, 2, 2);
         groundIndex++;
         if (groundIndex >= 5)
             groundIndex = 0;

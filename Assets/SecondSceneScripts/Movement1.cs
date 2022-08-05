@@ -31,12 +31,12 @@ public class Movement1 : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
+            transform.Rotate(Vector3.down, turnSpeed * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(Vector3.down, turnSpeed * Time.deltaTime);
+            transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
         }
     }
 }
