@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Value: 1
   gaussianStart:
     m_OverrideState: 1
-    m_Value: 490
+    m_Value: 1150
     min: 0
   gaussianEnd:
     m_OverrideState: 1
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   lift:
     m_OverrideState: 1
-    m_Value: {x: 0.899984, y: 0.9554714, z: 1, w: 0}
+    m_Value: {x: 0.7558407, y: 1, z: 0.9000471, w: 0}
   gamma:
     m_OverrideState: 1
     m_Value: {x: 1, y: 0.9599392, z: 0.9812615, w: 0}
