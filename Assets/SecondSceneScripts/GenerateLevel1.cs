@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GenerateLevel : MonoBehaviour
+public class GenerateLevel1 : MonoBehaviour
 {
     public GameObject[] section;
-    public float zPos = 50;
+    public float zPos = 120f;
     public bool creatingSection = false;
     public int secNum;
 
@@ -24,7 +24,7 @@ public class GenerateLevel : MonoBehaviour
         secNum = Random.Range(0, 3);
         Instantiate(section[secNum], new Vector3(0, 0, zPos), Quaternion.identity);
         zPos += 90f;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         creatingSection = false;
 
     }
