@@ -23,7 +23,7 @@ public class Odometer : MonoBehaviour
     {
 
         lastPositionL = leftHand.transform.position;
-        lastPositionR = righHand.transform.position;
+        
         lastPosition = transform.position;
     }
 
@@ -31,19 +31,18 @@ public class Odometer : MonoBehaviour
     {
 
         distanceTravelledL += Vector3.Distance(leftHand.transform.position, lastPositionL);
-        distanceTravelledR += Vector3.Distance(righHand.transform.position, lastPositionR);
+        
 
         lastPositionL = leftHand.transform.position;
-        lastPositionR = righHand.transform.position;
+        
 
         print("Left hand distance: " + distanceTravelledL);
-        Distance.text = ("L: " + distanceTravelledL);
+
+      
+        Distance.text = ("Score:" + Mathf.Round(distanceTravelledL * 1f) * .1f);
 
 
-        print("Right hand Distace: " + distanceTravelledR);
-        print("Right hand position: " + lastPositionR);
-        print("Left hand position: " + lastPositionL);
-        Distance.text += ("R: " + distanceTravelledR);
+       
     }
 
 }
